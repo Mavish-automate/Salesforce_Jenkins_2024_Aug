@@ -23,17 +23,18 @@ public class LegalEntityPage extends ProjectSpecificMethods
 public LegalEntityPage searchLegalEntity(String data) 
 {
 	///type(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.search.type.legalentity")),"legal entities");
-
-append(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.search.type.legalentity")), data);
+click(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.search.type.legalentity")));
+type(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.search.type.legalentity")),data);
 
 	
 	return this;
 }
 
-public LegalEntityPage clksearchedLegalEntity() throws InterruptedException 
+public LegalEntityPage clksearchedLegalEntity()
 {
 	
 //	click(locateElement("xpath", ObjectRepositoriesController.getDomValue("LegalEntity", "sf.legalEntity.clklegalEntity")));
+//	click( locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.clklegalEntity")));
 	executeTheScript("arguments[0].click();", locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LegalEntity", "sf.legalEntity.clklegalEntity")));
 	return this;
 }

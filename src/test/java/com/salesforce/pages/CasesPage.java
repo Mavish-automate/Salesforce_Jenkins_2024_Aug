@@ -16,7 +16,7 @@ public class CasesPage extends ProjectSpecificMethods
 	public CasesPage clkStatus() 
 	{
 		click(locateElement(Locators.XPATH, PropertyHandler.readObjectProperty("CasesPage","sf.casespage.status.dropdown")));
-	
+
 		return this;
 		
 	}
@@ -24,7 +24,6 @@ public class CasesPage extends ProjectSpecificMethods
 	public CasesPage clkEscalated() 
 	{
 		click(locateElement(Locators.XPATH, PropertyHandler.readObjectProperty("CasesPage","sf.casespage.status.dropdown.escalated")));
-	
 		return this;
 		
 	}

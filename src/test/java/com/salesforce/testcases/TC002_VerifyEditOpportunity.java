@@ -18,7 +18,7 @@ public class TC002_VerifyEditOpportunity extends ProjectSpecificMethods
 	}
 	
 	@Test
-	public void createOpportunity() throws InterruptedException, Exception  {
+	public void editOpportunity() throws InterruptedException, Exception  {
 		new LoginPage()
 		.enterUsername("vishal@testleaf.com")
 		.enterPassword("trustmavish@2024")

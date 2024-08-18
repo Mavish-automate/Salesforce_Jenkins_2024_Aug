@@ -18,7 +18,7 @@ public class TC003_DeleteOpportunity extends ProjectSpecificMethods
 	}
 	
 	@Test
-	public void createOpportunity() throws InterruptedException, Exception  {
+	public void deleteOpportunity() throws InterruptedException, Exception  {
 		new LoginPage()
 		.enterUsername("vishal@testleaf.com")
 		.enterPassword("trustmavish@2024")

@@ -23,8 +23,8 @@ public class LandingPage extends ProjectSpecificMethods
 
 	public LandingPage appLauncher() 
 	{
-		clearAndType(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LandingPage","sf.landingpage.applauncher.search")), "sales");
-		click(locateElement(Locators.XPATH, PropertyHandler.readObjectProperty("LandingPage","sf.landingpage.applauncher.sales")));
+		type(locateElement(Locators.XPATH,PropertyHandler.readObjectProperty("LandingPage","sf.landingpage.applauncher.search")), "sales");
+		click(locateElement(Locators.XPATH, PropertyHandler.readObjectProperty("LandingPage","sf.landingpage.applauncher.accountsSales")));
 
 		return this;
 	}

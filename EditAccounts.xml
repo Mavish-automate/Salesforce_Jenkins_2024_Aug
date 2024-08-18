@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.salesforce.testcases.TC002_CreateOpportunity"/>
+      <class name="com.salesforce.testcases.TC010_EditAccounts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
